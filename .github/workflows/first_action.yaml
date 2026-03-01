@@ -1,14 +1,16 @@
 name: my first workflow.
 
-on: 
-  push: [main]
+on:
+ push:
+  branches: 
+    - "*"
 
 jobs:
   first_workflow:
      runs-on: ubuntu-latest
      steps:
-         - name: Hello this is my first workflow
-           echo: "My first work flow"
+      - name: Hello this is my first workflow
+        run: "My first work flow"
 
-         - name: Print user name
-          echo: my name is $USER
+      - name: Print user name
+        run: my name is $USER
