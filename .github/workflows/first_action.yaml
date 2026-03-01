@@ -10,7 +10,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: Hello this is my first workflow
-        run: "My first work flow"
+        run: echo "My first work flow"
 
       - name: Print user name
         run: my name is $USER
