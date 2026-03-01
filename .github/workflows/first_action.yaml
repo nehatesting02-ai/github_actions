@@ -13,4 +13,4 @@ jobs:
         run: echo "My first work flow"
 
       - name: Print user name
-        run: my name is $USER
+        run: echo "my name is $USER"
